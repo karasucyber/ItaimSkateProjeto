@@ -141,6 +141,15 @@ body {
   color: #fff;
 }
 
+
+.Logo1{
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 10px;
+}
+
 @media (max-width: 991px) {
   html, body {
     overflow-x: hidden;
@@ -156,6 +165,8 @@ body {
     margin-bottom: 60px;
   }
 }
+
+
 
 .main-button-red a {
   font-size: 13px;
@@ -244,6 +255,8 @@ header
    font-style: normal;
    color: #f5a425;
 }
+
+
 
 .background-header {
   background-color: #fff!important;
@@ -778,12 +791,14 @@ services
   margin-top: -135px;
   position: absolute;
   width: 100%;
+  
 }
 
 .services .item {
   background-image: url(../images/);
   background: white;
   border-radius: 50px;
+  margin-bottom: 50px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
