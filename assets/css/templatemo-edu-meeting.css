@@ -47,6 +47,14 @@ reset
   src: url('../fonts/graffonti3.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'MinhaFonte2';
+  src: url('../fonts/Bombing.ttf') format('truetype');
+}
+
+
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -768,19 +776,20 @@ banner
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
+  
   letter-spacing: 1px;
 }
 
 .main-banner .caption h2 {
   margin-top: 20px;
   margin-bottom: 60px;
-  font-size: 100px; /* Tamanho da fonte grande e impactante */
+  font-size: 90px; /* Tamanho da fonte grande e impactante */
   text-transform: uppercase;
   font-weight: 900; /* Negrito extra para destacar */
   letter-spacing: 10px; /* Aumenta o espaçamento entre letras */
   font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte personalizada */
   color: #ffffff; /* Cor vibrante e chamativa */
-  width: 100%;
+  width: 90%;
   text-align: center; /* Centraliza o texto */
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8), 
                6px 6px 0 rgba(255, 255, 255, 0.2); /* Sombras múltiplas para efeito de grafite */
@@ -850,8 +859,11 @@ banner
 
 .main-banner .caption p {
   color: #fff;
-  font-size: 14px;
-  max-width: 570px;
+  font-size: 70px;
+  line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+
+  font-family: 'MinhaFonte2', sans-serif; /* Mantém a fonte personalizada */
+
 }
 
 .main-banner .caption .main-button-red {
