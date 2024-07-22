@@ -780,48 +780,127 @@ banner
   letter-spacing: 1px;
 }
 
-.main-banner .caption h2 {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  font-size: 90px; /* Tamanho da fonte grande e impactante */
-  text-transform: uppercase;
-  font-weight: 900; /* Negrito extra para destacar */
-  letter-spacing: 10px; /* Aumenta o espaçamento entre letras */
-  font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte personalizada */
-  color: #ffffff; /* Cor vibrante e chamativa */
-  width: 90%;
-  text-align: center; /* Centraliza o texto */
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8), 
-               6px 6px 0 rgba(255, 255, 255, 0.2); /* Sombras múltiplas para efeito de grafite */
-  line-height: 1.1; /* Ajusta o espaçamento entre linhas */
-  padding: 20px; /* Adiciona padding para espaçamento interno */
-  border: 5px solid #000; /* Borda preta grossa para destaque */
-  border-radius: 15px; /* Arredonda os cantos */
-  position: relative;
-  animation: pixar 3s ease-in-out forwards; /* Aplica a animação */
-}
-
-@keyframes pixar {
+@keyframes neon-text {
   0% {
-    width: 0;
-    opacity: 0;
+    text-shadow: none;
+    color: transparent;
   }
-  25% {
-    width: 25%;
-    opacity: 0.3;
+  20% {
+    text-shadow: none;
+    color: #ffffff;
   }
-  50% {
-    width: 50%;
-    opacity: 0.6;
+  40% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    color: #ffffff;
   }
-  75% {
-    width: 75%;
-    opacity: 0.9;
+  60% {
+    text-shadow: none;
+    color: #ffffff;
+  }
+  80% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    color: #ffffff;
   }
   100% {
-    width: 100%;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    color: #ffffff;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.2;
+  }
+  5% {
     opacity: 1;
   }
+  10% {
+    opacity: 0.2;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+  }
+  50% {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+  }
+}
+
+.main-banner .caption h2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 60px; /* Tamanho da fonte reduzido */
+  text-transform: uppercase;
+  font-weight: 900; /* Negrito extra para destacar */
+  letter-spacing: 5px; /* Aumenta o espaçamento entre letras */
+  font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte personalizada */
+  color: #ffffff; /* Cor vibrante e chamativa */
+  width: 100%;
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+  padding: 20px; /* Adiciona padding para espaçamento interno */
+  border-radius: 15px; /* Arredonda os cantos */
+  position: relative;
+  animation: neon-text 2s ease-in-out forwards, flicker 0.5s steps(2, start) infinite alternate;
 }
 
 .main-banner .caption h2:before {
@@ -831,24 +910,27 @@ banner
   left: -10px;
   right: -10px;
   bottom: -10px;
-  border: 5px solid #ffffff; /* Borda externa vibrante */
   border-radius: 20px;
   z-index: -1; /* Coloca a borda atrás do texto */
+  animation: neon-text 2s ease-in-out forwards, flicker 0.5s steps(2, start) infinite alternate;
 }
 
 .main-banner .caption h2:after {
-  content: 'SKATE'; /* Palavra adicional para efeito de rua */
+  content: '🛹'; /* Código do ícone de skate do Font Awesome */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; /* Necessário para alguns ícones do Font Awesome */
   position: absolute;
   bottom: -30px;
   right: 10px;
-  font-size: 30px;
-  color: #ff0000;
-  font-family: 'MinhaFonte', sans-serif;
+  font-size: 30px; /* Tamanho do ícone */
+  color: black;
   transform: rotate(-20deg);
   opacity: 0.8;
-  animation: pixar 3s ease-in-out forwards; /* Aplica a animação */
+  animation: neon-text 2s ease-in-out forwards, flicker 0.5s steps(2, start) infinite alternate;
   animation-delay: 1s; /* Adiciona um atraso para que apareça depois do h2 */
 }
+
+
 
 
 .main-banner .caption h2 em {
@@ -859,7 +941,7 @@ banner
 
 .main-banner .caption p {
   color: #fff;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1.1; /* Ajusta o espaçamento entre linhas */
 
   font-family: 'MinhaFonte2', sans-serif; /* Mantém a fonte personalizada */
