@@ -787,23 +787,23 @@ banner
   }
   20% {
     text-shadow: none;
-    color: #ffffff;
+    color: white;
   }
   40% {
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
-    color: #ffffff;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    color: white;
   }
   60% {
     text-shadow: none;
-    color: #ffffff;
+    color: white;
   }
   80% {
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
-    color: #ffffff;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    color: white;
   }
   100% {
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
-    color: #ffffff;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    color: white;
   }
 }
 
@@ -875,13 +875,13 @@ banner
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
   }
   50% {
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
   }
   100% {
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
   }
 }
 
@@ -893,7 +893,7 @@ banner
   font-weight: 900; /* Negrito extra para destacar */
   letter-spacing: 5px; /* Aumenta o espaçamento entre letras */
   font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte personalizada */
-  color: #ffffff; /* Cor vibrante e chamativa */
+  color: white; /* Cor vibrante e chamativa */
   width: 100%;
   text-align: center; /* Centraliza o texto */
   line-height: 1.1; /* Ajusta o espaçamento entre linhas */
