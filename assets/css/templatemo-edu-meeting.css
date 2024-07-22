@@ -34,6 +34,19 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('../fonts/graffonti3.ttf') format('truetype');
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -43,6 +56,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+
+
+
 
 .clearfix:after {
   content: ".";
@@ -129,6 +145,7 @@ html,
 body {
   background: #fff;
   font-family: 'Poppins', sans-serif;
+  
 }
 
 ::selection {
@@ -147,7 +164,6 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  margin: 10px;
 }
 
 @media (max-width: 991px) {
@@ -223,6 +239,7 @@ header
   background-color: #1f272b;
   position: relative;
   z-index: 1111;
+  
 }
 
 .sub-header .left-content p {
@@ -266,6 +283,7 @@ header
   left: 0;
   right: 0;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  
 }
 
 .background-header .main-nav .nav li a {
@@ -301,6 +319,7 @@ header
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
+  
 }
 
 .header-area .main-nav .logo {
@@ -315,6 +334,7 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  
 }
 
 .background-header .main-nav .logo {
@@ -336,6 +356,7 @@ header
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 999;
+  
 }
 
 .header-area .main-nav .nav li {
@@ -360,6 +381,7 @@ header
   height: 40px;
   line-height: 40px;
   border: transparent;
+  
   letter-spacing: 1px;
 }
 
@@ -459,6 +481,7 @@ header
   z-index: 99;
   right: 40px;
   display: none;
+  
 }
 
 .background-header .main-nav .menu-trigger {
@@ -478,6 +501,7 @@ header
   width: 30px;
   height: 2px;
   left: 0;
+  
 }
 
 .background-header .main-nav .menu-trigger span,
@@ -514,6 +538,8 @@ header
 .header-area .main-nav .menu-trigger span {
   top: 16px;
 }
+
+
 
 .header-area .main-nav .menu-trigger span:before {
   -moz-transform-origin: 33% 100%;
@@ -733,6 +759,9 @@ banner
   transform: translateY(-50%);
 }
 
+
+
+
 .main-banner .caption h6 {
   margin-top: 0px;
   font-size: 15px;
@@ -744,13 +773,74 @@ banner
 
 .main-banner .caption h2 {
   margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 36px;
+  margin-bottom: 60px;
+  font-size: 100px; /* Tamanho da fonte grande e impactante */
   text-transform: uppercase;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 1px;
+  font-weight: 900; /* Negrito extra para destacar */
+  letter-spacing: 10px; /* Aumenta o espaçamento entre letras */
+  font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte personalizada */
+  color: #ffffff; /* Cor vibrante e chamativa */
+  width: 100%;
+  text-align: center; /* Centraliza o texto */
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8), 
+               6px 6px 0 rgba(255, 255, 255, 0.2); /* Sombras múltiplas para efeito de grafite */
+  line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+  padding: 20px; /* Adiciona padding para espaçamento interno */
+  border: 5px solid #000; /* Borda preta grossa para destaque */
+  border-radius: 15px; /* Arredonda os cantos */
+  position: relative;
+  animation: pixar 3s ease-in-out forwards; /* Aplica a animação */
 }
+
+@keyframes pixar {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  25% {
+    width: 25%;
+    opacity: 0.3;
+  }
+  50% {
+    width: 50%;
+    opacity: 0.6;
+  }
+  75% {
+    width: 75%;
+    opacity: 0.9;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.main-banner .caption h2:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 5px solid #ffffff; /* Borda externa vibrante */
+  border-radius: 20px;
+  z-index: -1; /* Coloca a borda atrás do texto */
+}
+
+.main-banner .caption h2:after {
+  content: 'SKATE'; /* Palavra adicional para efeito de rua */
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  font-size: 30px;
+  color: #ff0000;
+  font-family: 'MinhaFonte', sans-serif;
+  transform: rotate(-20deg);
+  opacity: 0.8;
+  animation: pixar 3s ease-in-out forwards; /* Aplica a animação */
+  animation-delay: 1s; /* Adiciona um atraso para que apareça depois do h2 */
+}
+
 
 .main-banner .caption h2 em {
   font-style: normal;
@@ -787,10 +877,16 @@ services
 ---------------------------------------------
 */
 
+.Container2{
+  height: 300px;
+  width: 100%;
+  background: black;
+}
 .services {
   margin-top: -135px;
   position: absolute;
-  width: 100%;
+  width: 100%;  
+  height: 600px;
   
 }
 
@@ -806,11 +902,13 @@ services
   text-align: center;
   color: #fff;
   padding: 40px;
+
 }
 
 .services .item .icon {
   max-width: 200px;
   margin: 0 auto;
+  
 }
 
 .services .item h4 {
