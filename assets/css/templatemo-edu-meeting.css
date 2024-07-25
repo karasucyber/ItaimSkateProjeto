@@ -1128,6 +1128,10 @@ section.upcoming-meetings2 .categories {
   border-radius: 20px;
   padding: 40px;
   margin-right: 45px;
+  text-align: none;
+  color: #191a20;
+  margin-bottom: 50px;
+  
 }
 
 section.upcoming-meetings2 .categories h4 {
@@ -1165,10 +1169,6 @@ section.upcoming-meetings2 .categories .main-button-red a {
   width: 100%;
   text-align: center;
 }
-
-
-
-
 
 
 section.upcoming-meetings .section-heading {
